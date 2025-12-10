@@ -1,10 +1,10 @@
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=0:667EEA,100:764BA2&height=200&section=header&text=Kyungwon%20Lim&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Data%20Engineer%20|%20AI%20Developer&descAlignY=55&descAlign=50)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=0:667EEA,100:764BA2&height=250&section=header&text=Kyungwon%20Lim&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Data%20Engineer%20|%20AI%20Developer&descAlignY=55&descAlign=50)
 
 ### 👋 안녕하세요, 데이터 엔지니어 임경원입니다!
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FKYUNGWON-99&count_bg=%23764BA2&title_bg=%23667EEA&icon=github.svg&icon_color=%23FFFFFF&title=visitors&edge_flat=false)](https://github.com/KYUNGWON-99)
+![Hits](https://img.shields.io/badge/GitHub-KYUNGWON--99-blue?style=flat-square&logo=github)
 
 </div>
 
@@ -24,14 +24,17 @@
 
 ### COMIZOA / HW개발팀 (2023.08 ~ 2025.03)
 
-**CE 인증 - Project Manager** (2024.06 ~ 2025.01)
-- 30여개 제품들의 Cable 배선과 Program 개발
-- 결과: 30여종 제품 시험을 모두 한 번에 인증 완료하여 시간적 자원과 비용 절감
+**CE 인증 - Project Manager** (2024.06 ~ 2025.01) / 업무 기여도 80%
 
-**Quality Control - Developer** (2024.11 ~ 2025.01)
-- DIO, AIO Board의 품질 관리 전용 JIG, Program 개발
-- 제품 기능 검사 및 AIO의 Offset, Gain값 자동 Calibration Program 개발
-- 결과: 품질 신뢰도 향상 및 제품 생산 소비 시간 단축
+DAQ, Motion Controller, Serial Communication 등 30여 종의 제품에 대한 케이블 배선 설계와 CE 인증 전용 프로그램 개발을 총괄하며 프로젝트를 주도했습니다. 제품별 구조와 환경이 상이한 점을 고려하여 공통 배선 구조와 프로그램 통합 체계를 구축하였고, 이를 통해 여러 제품이 한 번의 시험으로 인증을 통과할 수 있도록 절차를 최적화했습니다.
+
+또한 각 제품의 기능을 동시에 테스트하고, 실행 중 특이 사항이나 버그가 발생할 경우 즉시 중단 및 로그 기록을 통해 개발자에게 알리는 자동 검증 프로그램을 C++ 기반으로 개발하였습니다. 이를 통해 인증 과정의 신뢰성과 효율성을 모두 확보하였으며, 결과적으로 **인증 소요 시간과 비용을 대폭 절감**하는 성과를 거두었습니다.
+
+**Quality Control - Developer** (2024.11 ~ 2025.01) / 업무 기여도 70%
+
+Digital Input/Output(DIO) 및 Analog Input/Output(AIO) Board의 품질 관리 전용 JIG와 검사 프로그램 개발을 담당했습니다. JIG는 Mentor Artwork 프로그램을 활용하여, 각 제품의 기능을 한 번에 확인할 수 있는 PCB 형태의 검사 장비로 설계했습니다.
+
+또한 AIO Board의 주요 기능을 자동으로 검증하고, 출력·입력 신호가 정확한 값을 유지하도록 Offset과 Gain 값을 자동 보정(Calibration)하는 품질 검사 프로그램을 C++ 기반으로 개발하여 검사 과정을 완전 자동화했습니다. 특히 JIG와 프로그램 간의 통신 구조를 안정적으로 설계함으로써 테스트 효율성과 정확도를 크게 향상시켰고, 그 결과 **제품 품질의 신뢰도를 높이는 동시에 생산 및 검사 소요 시간을 대폭 단축**하는 성과를 거두었습니다.
 
 ---
 
@@ -69,45 +72,43 @@
 
 ---
 
-### 🚗 인공지능 교통 단속 카메라
-> 대전대학교 졸업 프로젝트
+### 🛒 Instacart 고객 이탈 예측 및 마케팅 대시보드
+> SK Networks Family AI Camp 2nd 프로젝트
 
 **🎯 프로젝트 개요**
-- YOLO 모델을 기존의 단속 카메라와 융합
-- 모델 학습을 위한 데이터 수집 및 모델 선정
+- 현대 이커머스 시장에서 기존 고객 유지의 중요성에 착안
+- Instacart 데이터 기반 고객 이탈 정의 및 개인화 마케팅 전략 제안 대시보드 제작
+- 역할: Data Engineer, Database Administrator (기여도 50%)
 
-**📌 결과**
-- 기존 후방 단속 카메라와 같이 번호판을 인식하며, 추가적으로 이륜 자동차 운전자의 헬멧 착용 여부를 인식
+**📊 담당 업무**
+- **DBA**: 원시 데이터 분석 및 ERD 설계 (6개 테이블: products, departments, aisles, orders, order_products_prior/train)
+- **Data Engineer**: 고객 이탈 정의, 데이터 전처리, 관계 분석, 인사이트 도출
+- **이탈 기준 정의**: 업계 표준(30일) 벤치마킹 + 고객별 구매 주기 분석 → 이탈계수 1.35 도출
+
+**🤖 모델 성능**
+- XGBoost: AUC 0.98, 정확도 95%, 정밀도 96%, 재현율 89%, F1 92%
+- Decision Tree: AUC 0.90, 정확도 91%, 정밀도 83%, 재현율 89%, F1 86%
+
+**📌 기대효과**
+- 고객 이탈률 감소 및 유지율 향상
+- 충성 고객/신규 고객 차별화 전략 제공
+- 마케팅 및 CRM 팀 의사결정 지원 도구로 활용
 
 **🛠 Tech Stack**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![YOLO](https://img.shields.io/badge/YOLO-00FFFF?style=flat-square&logo=yolo&logoColor=black)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
-
----
-
-### 🛒 Instacart 고객 이탈 예측
-> SK Networks Family AI Camp 2차 프로젝트
-
-**🎯 프로젝트 개요**
-- 'Instacart' 데이터 전처리 및 DB 구축
-- 데이터 분석 및 모델 적용
-
-**📌 결과**
-- 고객의 이탈을 정의하고 이탈 점수에 맞추어 개인화된 마케팅 전략을 제안할 수 있는 대시보드 제작
-
-**🛠 Tech Stack**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-FF6600?style=flat-square&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+
+**🔗 Repository**: [SKN15-2nd-4Team](https://github.com/SKNETWORKS-FAMILY-AICAMP/SKN15-2nd-4Team)
 
 ---
 
 ### 💬 문서기반 RAG Chatbot
-> SK Networks Family AI Camp 4차 프로젝트
+> SK Networks Family AI Camp 4th 프로젝트
 
 **🎯 프로젝트 개요**
 - 대규모 강의 환경에서 교수와 학생 간의 효율적인 소통을 지원하는 AI 기반 질의응답 시스템
@@ -122,6 +123,26 @@
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=chainlink&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+
+**🔗 Repository**: [skn15-4th-1team](https://github.com/SKNETWORKS-FAMILY-AICAMP/skn15-4th-1team)
+
+---
+
+### 🚗 인공지능 교통 단속 카메라
+> 대전대학교 졸업 프로젝트
+
+**🎯 프로젝트 개요**
+- YOLO 모델을 기존의 단속 카메라와 융합
+- 모델 학습을 위한 데이터 수집 및 모델 선정
+
+**📌 결과**
+- 기존 후방 단속 카메라와 같이 번호판을 인식하며, 추가적으로 이륜 자동차 운전자의 헬멧 착용 여부를 인식
+
+**🛠 Tech Stack**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![YOLO](https://img.shields.io/badge/YOLO-00FFFF?style=flat-square&logoColor=black)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
 
 ---
 
@@ -138,6 +159,7 @@
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
+![XGBoost](https://img.shields.io/badge/XGBoost-FF6600?style=for-the-badge&logoColor=white)
 ![YOLO](https://img.shields.io/badge/YOLO-00FFFF?style=for-the-badge&logoColor=black)
 
 ### 🌐 Frontend & Backend
