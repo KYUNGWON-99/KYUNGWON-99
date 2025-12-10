@@ -128,15 +128,23 @@ Digital Input/Output(DIO) 및 Analog Input/Output(AIO) Board의 품질 관리 �
 
 ---
 
-### 🚗 인공지능 교통 단속 카메라
+### 🚗 고정식 인공지능 과속 단속 카메라
 > 대전대학교 졸업 프로젝트
 
 **🎯 프로젝트 개요**
-- YOLO 모델을 기존의 단속 카메라와 융합
-- 모델 학습을 위한 데이터 수집 및 모델 선정
+- 코로나19 이후 급증한 배달 이륜자동차 사고 문제 해결을 위한 AI 카메라 시스템 개발
+- YOLO 비전 객체 탐색 기술을 활용하여 이륜자동차 번호판과 운전자 헬멧 착용 여부 판단
+- 역할: Data Engineer
+
+**📊 담당 업무**
+- **데이터 설계 및 품질 관리**: YOLO 모델 학습용 번호판/헬멧 이미지 데이터 체계적 설계 및 라벨링 품질 관리
+- **데이터 전처리**: RGB 값 이상치(0~255 범위 이탈) 발견 → Grayscale 적용으로 헬멧 인식 정확도 개선
+- **실시간 데이터 파이프라인**: 무선 통신 기반 카메라-서버 간 데이터 전송 구조 설계 (데이터 손실 최소화, 지연 시간 관리)
+- **모델 성능 개선**: 딥러닝 모델 재학습 및 데이터 피드백 루프 구현으로 시스템 정확도 지속 향상
 
 **📌 결과**
-- 기존 후방 단속 카메라와 같이 번호판을 인식하며, 추가적으로 이륜 자동차 운전자의 헬멧 착용 여부를 인식
+- 기존 후방 단속 카메라의 번호판 인식 기능 + 헬멧 착용 여부 인식 기능 통합
+- 데이터 무결성 확보를 통한 모델 성능 안정화
 
 **🛠 Tech Stack**
 
@@ -190,18 +198,6 @@ Digital Input/Output(DIO) 및 Analog Input/Output(AIO) Board의 품질 관리 �
 | 정보처리기사 | 한국산업인력공단 | 2025.09 |
 | 데이터분석 준전문가 (ADsP) | 데이터자격검정 | 2025.09 |
 | SQL 개발자 (SQLD) | 데이터자격검정 | 2025.09 |
-
----
-
-## 📈 GitHub Stats
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=KYUNGWON-99&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=667EEA&icon_color=764BA2)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=KYUNGWON-99&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=667EEA)
-
-</div>
 
 ---
 
