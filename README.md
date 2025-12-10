@@ -107,22 +107,48 @@ Digital Input/Output(DIO) 및 Analog Input/Output(AIO) Board의 품질 관리 �
 
 ---
 
-### 💬 문서기반 RAG Chatbot
-> SK Networks Family AI Camp 4th 프로젝트
+### 💬 Lecture-RAG (강의록 기반 질의응답 시스템)
+> SK Networks Family AI Camp 4th 프로젝트 (기여도 70%)
 
 **🎯 프로젝트 개요**
-- 대규모 강의 환경에서 교수와 학생 간의 효율적인 소통을 지원하는 AI 기반 질의응답 시스템
-- 시스템 아키텍처 구성 및 PostgreDB 구조 설계
+- 대규모 온라인 강의 환경에서 교수자의 반복 질문 응대 부담과 학생들의 24/7 학습 지원 공백 문제 해결
+- RAG 기반 지능형 질의응답 시스템을 2단계에 걸쳐 개발 및 고도화
+- 역할: Data Engineer, System Architect
+
+**📊 담당 업무**
+
+**1단계: 프로토타입 개발**
+- Streamlit 기반 단일 애플리케이션으로 RAG 기술의 효용성 검증
+- 단일 앱 구조의 확장성 및 대규모 트래픽 처리 한계 확인
+
+**2단계: 마이크로서비스 아키텍처 전환**
+- **시스템 아키텍처 설계**: Backend, RAG Core, Database 완전 분리
+  - Django REST API: 상태 관리 및 데이터 입출력 전담
+  - RAG Core 모듈: LLM 추론 및 벡터 검색 기능만 수행
+  - 서비스 유지보수성과 확장성 대폭 향상
+
+- **ETL 파이프라인 구축**: 대규모 비정형 강의록 데이터 처리
+  - 텍스트 정규화 및 RecursiveCharacterTextSplitter로 최적 크기 분할
+  - 소스 및 청크 ID 메타데이터 첨부로 답변 출처 명확화 및 데이터 신뢰도 확보
+  - OpenAI Embedding → FAISS 벡터 데이터베이스 적재
+
+- **데이터 기반 인사이트 창출 기반 마련**
+  - PostgreSQL로 학생 질문 기록 및 LLM 응답 결과 저장
+  - Django ORM을 통한 체계적 데이터 관리 구조 구축
+  - 질문 패턴 분석을 통한 강의 취약점 파악 및 품질 개선 지원 기반 마련
 
 **📌 결과**
-- 문서 처리 파이프라인의 성능을 개선하고, PostgreSQL과 VectorDB를 결합하여 답변의 정확도 향상
+- 초기 아이디어를 확장 가능한 엔터프라이즈 레벨의 마이크로서비스 시스템으로 성공적 전환
+- 복잡한 데이터 파이프라인 구축 및 클라우드 환경에서의 안정적인 시스템 운영 능력 입증
 
 **🛠 Tech Stack**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=chainlink&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![FAISS](https://img.shields.io/badge/FAISS-00599C?style=flat-square&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
 
 **🔗 Repository**: [skn15-4th-1team](https://github.com/SKNETWORKS-FAMILY-AICAMP/skn15-4th-1team)
 
